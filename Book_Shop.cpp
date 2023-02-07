@@ -16,14 +16,10 @@ int main() {
 	vector<int> val(n);
 	vector<int> wt(n);
 
-
 	for (int&v : val) cin >> v;
 	for (int&v : wt) cin >> v;
 
-
-
 	vector<vector<int>> dp(n + 1, vector<int>(w + 1, 0));
-
 
 	for (int i = 1; i <= n; ++i)
 	{
@@ -43,10 +39,6 @@ int main() {
 	}
 
 	cout << dp[n][w];
-
-
-
-
 
 
 }
